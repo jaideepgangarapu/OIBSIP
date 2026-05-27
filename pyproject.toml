@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-voice-assistant"
+version = "0.1.0"
+description = "A simple Python voice assistant with memory, reminders, and voice controls."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "SpeechRecognition",
+    "pyttsx3",
+    "wikipedia",
+    "PyAudio"
+]
+entry-points = { "console_scripts" = ["mini-voice-assistant = voice_assist:main"] }
